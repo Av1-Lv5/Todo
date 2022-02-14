@@ -1,0 +1,119 @@
+:root {
+    --gradient-1: rgb(51, 126, 212);
+    --gradient-2: rgb(63, 231, 203);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    min-height: 100vh;
+    font-family: "Roboto";
+    background: linear-gradient(45deg, var(--gradient-1), var(--gradient-2));
+    color: white;
+}
+h1 {
+    font-size: 2.5rem;
+}
+form,
+header {
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-input,
+form button {
+    border: none;
+    padding: 1rem;
+    font-size: 1.5rem;
+    background: white;
+    color: #1c1c1c;
+}
+.todo-input {
+    min-width: 30%;
+}
+form button {
+    color: var(--gradient-2);
+    background-color: white;
+    transition: 0.2s ease;
+}
+input:focus {
+    outline: none;
+}
+form button:hover {
+    background-color: var(--gradient-2);
+    color: white;
+}
+
+.todo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.todo-list {
+    list-style: none;
+    min-width: 30%;
+    max-width: 600px;
+}
+.todo-div {
+    margin: 0.5rem;
+    background-color: white;
+    color: #1c1c1c;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    transition: all 1s ease;
+}
+.todo-li {
+    flex: 1;
+    padding: 1rem;
+    letter-spacing: 0.5px;
+    word-spacing: 0.1em;
+    line-height: 1.3em;
+}
+.delete-btn,
+.mark-btn {
+    background-color: var(--gradient-1);
+    border: none;
+    cursor: pointer;
+    padding: 1rem;
+    color: white;
+}
+.delete-btn {
+    background-color: rgb(231, 83, 83);
+}
+.mark-btn {
+    background-color: rgb(127, 243, 127);
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.remove-todo {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+/* filter todo */
+#filter-todo {
+    border: none;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: var(--gradient-1);
+    color: white;
+    padding: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+#filter-todo:hover {
+    background-color: var(--gradient-1);
+}
