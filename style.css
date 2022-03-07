@@ -36,7 +36,8 @@ form button {
     color: #1c1c1c;
 }
 .todo-input {
-    min-width: 30%;
+    width: 100%;
+    max-width: 450px;
 }
 form button {
     color: var(--gradient-2);
@@ -58,8 +59,8 @@ form button:hover {
 }
 .todo-list {
     list-style: none;
-    min-width: 30%;
-    max-width: 600px;
+    width: 100%;
+    max-width: 550px;
 }
 .todo-div {
     margin: 0.5rem;
