@@ -2,7 +2,7 @@
 
 A simple Todo project, built with JS. The project is created following the guidance from [DevEd Todo project from Youtube](https://www.youtube.com/watch?v=Ttf3CEsEwMQ).
 
-### [Live Demo](https://avinash-lvs.github.io/Todo/)
+### [Live Demo](https://todo.alvs.dev/)
 
 ## Preview
 
